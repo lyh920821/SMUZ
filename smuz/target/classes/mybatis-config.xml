@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<!-- <typeAliases>
+		<typeAlias type="com.Prototype.user.model.dto.MemberVO" alias="MemberVO"/>
+	</typeAliases> -->
+	<typeAliases>
+		<typeAlias type="com.project.one.model.dto.MemberVO" alias="MemberVO"/>
+		<typeAlias type="com.project.one.model.dto.PlaylistVO" alias="PlaylistVO"/>
+		<typeAlias type="com.project.one.model.dto.MusicVO" alias="MusicVO"/>
+		<typeAlias type="com.project.one.model.dto.CommentVO" alias="CommentVO"/>
+		<typeAlias type="com.project.one.model.dto.TestVO" alias="TestVO"/>
+		<typeAlias type="com.project.one.model.dto.admin.AdminListfeedVO" alias="AdminListfeedVO"/>
+		<typeAlias type="com.project.one.model.dto.admin.AdminMemberVo" alias="AdminMemberVo"/>
+		<typeAlias type="com.project.one.model.dto.admin.AdminMusicfeedVO" alias="AdminMusicfeedVO"/>
+		<typeAlias type="com.project.one.model.dto.admin.AdminMusicVo" alias="AdminMusicVo"/>
+		<typeAlias type="com.project.one.model.dto.ListfeedVO" alias="ListfeedVO"/>		
+		<typeAlias type="com.project.one.model.dto.MusicfeedVO" alias="MusicfeedVO"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="mappers/memberMapper.xml"/>
+		<mapper resource="mappers/listFeedMapper.xml"/>
+		<mapper resource="mappers/playListMapper.xml"/>
+		<mapper resource="mappers/musicMapper.xml"/>
+		<mapper resource="mappers/musicFeedMapper.xml"/>
+		<mapper resource="mappers/AdminFeedMapper.xml"/>
+		<mapper resource="mappers/AdminListMapper.xml"/>
+		<mapper resource="mappers/AdminMemberMapper.xml"/>
+		<mapper resource="mappers/AdminMusicMapper.xml"/>
+	</mappers>
+	
+
+</configuration>

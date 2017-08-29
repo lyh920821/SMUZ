@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="listFeed">
+ 
+   
+   <insert id="listFeedInsert">
+      INSERT INTO LIST_FEED VALUES(LF_SEQ.NEXTVAL,#{lf_uploader},#{lf_list},#{lf_title},#{lf_hashtag},#{lf_date},#{lf_count},'',0,0,0,'1,1,1',1)
+   </insert>
+   
+   <select id="listFeedSearch" resultType="ListfeedVO">
+   		SELECT * FROM LIST_FEED WHERE LF_UPLOADER = #{lf_uploader}
+   </select>
+   
+   <select id="followListFeed" resultType="ListfeedVO" parameterType="TestVO">
+		SELECT * FROM LIST_FEED WHERE lf_uploader IN
+		<foreach collection="sqlll" item="a" open="(" close=")" separator=",">
+		 	#{a}
+		 </foreach>
+	</select>
+</mapper>

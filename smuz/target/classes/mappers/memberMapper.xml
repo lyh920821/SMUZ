@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="member">
+	
+	<insert id="memberInsert">
+		INSERT INTO SM_MEMBER VALUES (sm_seq.nextval, #{sm_id}, #{sm_password}, #{sm_name}, #{sm_birth}, #{sm_age}, #{sm_sex}, '1', #{sm_sorting},'','','',0, 180, 0,'1/1/1',#{sm_date},'')
+	</insert>
+	
+	<insert id="playList">
+		INSERT INTO PLAYLIST VALUES (#{FKseq},'')
+	</insert>
+	
+	<select id="memberCheck" resultType="Integer">
+		SELECT COUNT(*) FROM SM_MEMBER WHERE SM_ID = #{check}
+	</select>
+	
+	<select id="memberLoginCheck" resultType="Integer">
+		SELECT COUNT(*) FROM SM_MEMBER WHERE SM_ID = #{userid} AND SM_PASSWORD = #{userpass}
+	</select>
+	
+	<select id="memberList" resultType="MemberVO">
+		SELECT * FROM SM_MEMBER WHERE SM_ID = #{userid} AND SM_PASSWORD = #{userpass}
+	</select>
+	
+	<select id="memberSEQ" resultType="MemberVO">
+		SELECT * FROM SM_MEMBER WHERE SM_SEQ = #{seq}
+	</select>
+	
+	<update id="memberupdate">
+		UPDATE SM_MEMBER SET SM_USER_R = #{sm_user_r}, SM_USER_B = #{sm_user_b}, SM_RGB_CNT = #{sm_rgb_cnt} WHERE  SM_SEQ = #{sm_seq}
+	</update>
+	
+   
+</mapper>

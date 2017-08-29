@@ -1,0 +1,43 @@
+footer {
+    min-height: 57px;
+    background: #5285c4;
+    color: #ececec;
+    border-top: 2px solid #233b5d;
+}
+
+.footer-bar {
+    display: table;
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 57px;
+}
+
+.footer-lab {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.a-footer{
+    color: #ececec;
+    opacity: 0.9;
+}
+
+.a-footer:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.copy-footer{
+    color: #ececec;
+    margin: 0;
+    float: right;
+    opacity: 0.8;
+}
+
+.footer-lab-cover{
+    display: inline-block;
+    margin: 0 auto;
+    min-width: 1080px;
+    text-align: left;
+}

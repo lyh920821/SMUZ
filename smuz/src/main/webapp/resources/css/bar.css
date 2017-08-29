@@ -1,0 +1,47 @@
+.music-bar {
+    position: fixed;
+    width: 200px;
+    margin-top: 52px;
+    margin-bottom: 65px;
+    height: calc(100% - 52px);
+    float: left;
+    right: 0px;
+    background: none;
+}
+
+.follwer-table-title {
+    background: #657997 !important;
+    color: #ececec;
+    text-align: center;
+    border-radius: 0px !important;
+}
+.list-main-follwer{
+    height: 350px;
+    overflow: scroll;
+}
+
+.list-main-follwer::-webkit-scrollbar {
+	display: none;
+}
+
+.active-follower{
+    background: #5285c4 !important;
+    color: white !important;
+}
+
+.active-follower:hover{
+    background: #5285c4 !important;
+    color: white !important;
+}
+
+.follwer-group-item{
+    border-radius: 0px !important;
+}
+
+.follower-bottom-margin{
+    margin-bottom: 15px;
+}
+
+.follower-list-main{
+    border-bottom: 1px solid #ddd;
+}

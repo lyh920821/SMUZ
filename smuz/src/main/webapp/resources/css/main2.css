@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Nanum Gothic", sans-serif;
+}
+.mypage-circle{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.w3-third {
+  width: 25%;
+  text-align: center;
+}
+
+.mypage-border-color {
+  border-color: #233b5d !important;
+}
+
+.mypage-padding {
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mypage-width {
+  min-width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  display: table;
+  margin-top: 10px;
+}
+
+rect {
+  fill: rgba(0, 0, 0, 0);
+}
+
+.mypage-username {
+  margin-top: 15px;
+  font-size: 20pt;
+  color: #ececec;
+  font-weight: bold;
+}
+
+#mypage-holder {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#canvas-holder-full {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.canvas-holder {
+  color: #ececec;
+  font-size: 12pt;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
+  float: right;
+  margin-right: 15px;
+}
+
+.mypage-padding-tab{
+  padding: 10px 16px !important;
+}
+
+.mypage-bottombar{
+  border-bottom: 3px solid #ccc;
+}

@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html, body, h1, h2, h3, h4, h5 {
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	background: #ececec;
+}
+
+input {
+	outline-style: none
+}
+
+.hash-tag-main-a{
+	color: #767676 !important;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.hashtag {
+	color: gray;
+}
+
+.video-box {
+	position: relative;
+	width: 100%;
+	padding: 56.6% 0 6px;
+}
+
+.video-box iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.w3-row {
+	margin: 0 auto;
+}
+
+.media {
+	display: none;
+}
+
+.recommed-w3-clear {
+	margin-top: 0px;
+}
+
+.recommed-input-group {
+	margin-top: 15px;
+}
+
+.w4-margin {
+	margin: 15px 1px !important;
+}
+
+.w3-clear {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.contant-main {
+	color: #767676;
+}
+
+.w3-button {
+	background: #657997;
+	color: #ececec;
+}
+
+.w3-button:hover {
+	background: #5285c4 !important;
+	color: white !important;
+}
+
+.main-table-title {
+	text-align: center;
+	background: #657997 !important;
+	color: #ececec;
+}
+
+.eq-main-effect {
+	display: table-cell;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+.list-group-item {
+	border: none;
+	border: solid 1px #ececec;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 10pt;
+}
+
+.list-group-item.active, .list-group-item.active:hove {
+	background-color: #5285c4 !important;
+}
+
+.hash-tag-main {
+	font-size: 11pt;
+}
+
+.all-view-main {
+	font-size: 11pt;
+}
+
+.list-main {
+	overflow: scroll;
+	height: 350px;
+}
+
+.list-main::-webkit-scrollbar {
+	display: none;
+}
+
+.muisc-over-main {
+	position: relative;
+}
+
+.recommed-btn {
+	background: none;
+	border: none;
+	float: right;
+}
+
+.recommed-input {
+	border: none;
+	width: 85%;
+}
+
+.over-img-main {
+	position: absolute;
+	display: none;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	background: url(../icon/play.png) no-repeat center center;
+	background-size: cover;
+}
+
+.recommed-main-text {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 10pt;
+}

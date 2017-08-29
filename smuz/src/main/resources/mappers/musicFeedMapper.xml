@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="musicFeed">
+	
+	<select id="comment" resultType="CommentVO">
+		select * from sm_comment where cm_board_id=#{bbid}
+	</select>
+	
+	<insert id="musicFeedInsert">
+      INSERT INTO MUSIC_FEED VALUES(MF_SEQ.NEXTVAL,#{mf_user},#{mf_board},#{mf_file},#{mf_tag},#{mf_like_cnt},#{mf_date},#{mf_img})
+   </insert>
+   
+   <select id="musicFeedList" resultType="MusicFeedVO">
+      SELECT * FROM music_feed WHERE Mf_User=#{seq}
+   </select>
+   
+   <select id="followMusicFeed" resultType="MusicFeedVO" parameterType="TestVO">
+		SELECT * FROM music_feed WHERE Mf_User IN
+		<foreach collection="sqlll" item="a" open="(" close=")" separator=",">
+		 	#{a}
+		 </foreach>
+	</select>
+   
+</mapper>

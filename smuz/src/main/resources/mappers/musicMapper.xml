@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="music">
+	
+	<select id="musicListSEQ" resultType="MusicVO" parameterType="TestVO">
+		SELECT * FROM MUSIC WHERE MS_ID IN
+		<foreach collection="sqlll" item="a" open="(" close=")" separator=",">
+		 	#{a}
+		 </foreach>
+	</select>
+	<select id="musicmusic" resultType="MusicVO">
+		SELECT * FROM MUSIC WHERE MS_ID=#{musicid}
+	</select>
+	<update id="update">
+		UPDATE MUSIC SET MS_COLOR_R = #{ms_color_R}, MS_COLOR_G = #{ms_color_G}, MS_COLOR_B = #{ms_color_B}, MS_RGB_CNT=#{ms_RGB_CNT} WHERE MS_ID=#{ms_id}
+	</update>
+	<select id="recommendListR" resultType="MusicVO">
+		SELECT * FROM MUSIC WHERE Ms_Color_R Between #{row} And #{high}
+	</select>
+	<select id="recommendListG" resultType="MusicVO">
+		SELECT * FROM MUSIC WHERE Ms_Color_G Between #{row} And #{high}
+	</select>
+	<select id="recommendListB" resultType="MusicVO">
+		SELECT * FROM MUSIC WHERE Ms_Color_B Between #{row} And #{high}
+	</select>
+	
+</mapper>

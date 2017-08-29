@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
+<mapper namespace="Adminmember">
+	<select id="view" resultType="AdminMemberVo">
+		SELECT * FROM sm_member
+	</select>
+	<select id="artist" resultType="AdminMemberVo">
+		SELECT * FROM sm_member WHERE SM_RATING = #{sm_rating}
+	</select>
+	<update id="update">
+		UPDATE SM_MEMBER SET SM_RATING = #{sm_rating} WHERE SM_SEQ = #{sm_seq}
+	</update>
+	<delete id="del">
+		DELETE FROM sm_member WHERE sm_seq=#{sm_seq}
+	</delete>
+</mapper>

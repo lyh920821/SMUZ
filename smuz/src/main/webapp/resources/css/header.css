@@ -1,0 +1,139 @@
+nav{
+	width: 100%;
+    position: fixed !important;
+	z-index: 9;
+}
+
+.a-header {
+    color: #ececec;
+    text-decoration: none;
+    text-align: center;
+}
+
+.a-header:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.input-group-btn{
+    padding: 0;
+}
+
+.navbar-custom-header {
+    position: relative;
+    background: #233b5d;
+    border: 1px solid transparent;
+    /* border-bottom: solid 2px #5285c4; */
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+.navigation-header {
+    margin: 0 auto;
+    display: table;
+    min-width: 1080px;
+    max-width: 1280px;
+    min-height: 50px;
+}
+
+.navbar-form {
+    display: inline-block;
+}
+
+.search-header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navigation-line-header {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.input-group{
+    min-width: 500px;
+}
+#inputSearchBoxxx{
+	position:relative;
+}
+#results{
+	text-align:left;
+	margin-top:-2px;
+	position:absolute;
+	width:451px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	
+	max-height:500px;
+	overflow: auto;
+	border-radius: 5px;
+}
+::-webkit-scrollbar {
+	display:none;	
+}
+#results li{
+	list-style:none;
+	padding:14px 10px 14px 10px;
+	font-size: 11pt;
+	border-bottom: 1px solid rgba(50,50,50,0.1);
+	
+}
+#results li:hover{
+	background-color:rgba(100,100,100,0.1);
+}
+#results li a{
+	text-decoration: none;
+	color:#333;
+}
+.logo-header {
+    font-size: 18pt;
+}
+
+.form-control{
+    max-width: 500px;
+}
+
+.icon-header {
+    max-height: 40px;
+    max-width: 40px;
+}
+.btn-header{
+    float: left;
+    height: 34px;
+}
+#musicPlay{
+	width:100%;
+	height:120px;
+}
+#previous,#next{
+	float:left;
+	width:25%;
+	height:100%;
+	text-align:center;
+	line-height:100px;
+}
+#playMusic{
+	float:left;
+	width:50%;
+	height:100%;
+	text-align:center;
+	line-height:100px;
+}
+#previous img,#next img,#playMusic img{
+	width:50%;
+}
+#previous img{
+	margin-left:25px;
+}
+#next img{
+	margin-right:25px;
+}
+#previous,#next,#playMusic:hover{
+	cursor:pointer;
+}
+.playicon{
+	width:20px;
+	display:none;
+	float:left;
+	margin-right:5px;
+}
